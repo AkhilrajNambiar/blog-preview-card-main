@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "figtree";
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    font-family: "figtree";
+    font-weight: normal;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    position: relative;
+}
+
+div.main-card {
+    background-color: white;
+    padding: 16px;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 5px 5px black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    cursor: pointer;
+    transition: 500ms 0s ease-out;
+}
+
+img.card-image {
+    border-radius: 16px;
+    width: 100%;
+    min-width: 350px;
+}
+
+p.learning {
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+p.published-on {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h2.card-title {
+    font-weight: 700;
+    margin-bottom: 1em;
+    transition: 500ms;
+}
+
+p.card-description {
+    color: hsl(0, 0%, 50%);
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+img.author-img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+p.author-name {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.main-card:hover h2.card-title{
+    color: hsl(47, 88%, 63%);
+}
+
+div.main-card:hover {
+    box-shadow: 10px 10px black;
+}
